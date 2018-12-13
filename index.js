@@ -48,7 +48,6 @@ async function createAnswer(offer) {
   // Setup handler to render remote video when it's ready
   pc.ontrack = event => {
     remoteVideo.srcObject = event.streams[0]
-    remoteVideo.play()
   }
 
   // Get user's mic and camera
